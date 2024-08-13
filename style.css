@@ -1,0 +1,46 @@
+@import url(fonts/fonts.css);
+
+:root{
+    color: #007fb9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "StartosSkyeng", sans-serif;
+
+}
+body{
+    background-color: black;
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main{
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+}
+.title{
+    font-size: 64px;
+    line-height: 0.9;
+    font-weight: 400px;
+    text-shadow: 3px 3px 7px rgb(4, 191, 238);
+}
+.button{
+    font-size: 30px;
+    font-weight: 400px;
+    margin-top: 40px;
+    background-color: #002da8;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgb(4, 191, 238);
+}
+.mainzitat{
+    font-size: 25px;
+}
