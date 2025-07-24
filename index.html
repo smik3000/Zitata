@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generator Zetat</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Змейка</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="main">
-    <h1 class="title">
-        Generator Internet Zitat
-    </h1>
-    <div class="imgwrp">
-        <img src="images/1.png" alt="" class="mainimg" id="image">
-    </div>
-<div class="zitata">
-    <p id="zitata" class="mainzitat">
-        Кто рано встает, тот потом пожалеет о своем решении.
-    </p>
-    <button class="button" onclick="generateZitat()">
-        Сгенерировать цитату
-    </button>
-</div>
-<script src="script.js">
+  <div class="game-container">
+    <h1>Змейка</h1>
 
-</script>    
+    <div class="scoreboard">
+      <span>Счет: <span id="score">0</span></span>
+      <span>Рекорд: <span id="high-score">0</span></span>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="overlay" class="overlay start">
+      <div class="message">Нажмите стрелку для начала</div>
+    </div>
+
+    <div id="game-over" class="overlay game-over hidden">
+      <div class="message">
+        <h2>Игра окончена!</h2>
+        <p>Ваш счет: <span id="final-score">0</span></p>
+        <button id="restart-button">Начать заново</button>
+      </div>
+    </div>
+
+    <div class="controls">
+      <p>Управление: Стрелки для движения</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
